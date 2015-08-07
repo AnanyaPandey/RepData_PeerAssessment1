@@ -61,7 +61,7 @@ names(agg) <- c("Date","Tota_Steps")
 hist(agg$Tota_Steps, main = "Total Steps By Day", col="green", xlab = "Total Steps", ylab="Frequency")
 ```
 
-![](PA1_template_files/figure-markdown_github/Histogram-1.png)
+![](Figures/Histogram.jpg)
 
 1.  Calculate and report the **mean** and **median** total number of steps taken per day
 
@@ -82,7 +82,7 @@ names(stepsbyinterval) <- c("Interval","Average_Steps")
 plot(stepsbyinterval$Interval,stepsbyinterval$Average_Steps, type = "l", main = "Average Steps By Interval", xlab="Interval", ylab="Number Of Steps")
 ```
 
-![](PA1_template_files/figure-markdown_github/StepsByInterval-1.png)
+![](figures/AverageSpeedByInterval.jpg)
 
 1.  Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -164,4 +164,4 @@ library(lattice)
 xyplot(stepbyintervalnew$steps ~ stepbyintervalnew$interval | stepbyintervalnew$dow , main = "Average Step Per Day By Interval", xlab="Interval",ylab="Steps",type="l")
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](figures/IntervalDifference.jpg)
