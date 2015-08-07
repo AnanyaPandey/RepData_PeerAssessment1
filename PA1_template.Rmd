@@ -1,7 +1,7 @@
 ---
-output: 
-  html_document: 
-    keep_md: yes
+output:
+  md_document:
+    variant: markdown_github
 ---
 Analyzing the Fitbit Data
 ====================
@@ -82,6 +82,7 @@ agg <- aggregate(data$steps, by=list(date = data$date), FUN=sum, na.rm=TRUE)
 names(agg) <- c("Date","Tota_Steps")
 hist(agg$Tota_Steps, main = "Total Steps By Day", col="green", xlab = "Total Steps", ylab="Frequency")
 ```
+
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
 ```{r MeanMedian, echo=TRUE}
