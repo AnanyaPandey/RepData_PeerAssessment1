@@ -1,8 +1,8 @@
-Analyzing the Fitbit Data
+﻿Analyzing the Fitbit Data
 =========================
 
 Ananya Pandey
-August 2015
+September 2015
 
 Abstract
 --------
